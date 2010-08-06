@@ -1,0 +1,11 @@
+This data structure is basically a vector, items of which require no
+initialization. An item is initialized to default value the first time
+it's accessed. Clearing of all values takes O(1) time.
+
+It's handy for use cases when you have to frequently perform such
+operations on a big array:
+1) initialize a few items in it
+2) clear all items
+
+Inspired by this article: http://bit.ly/bDHfzA
+
