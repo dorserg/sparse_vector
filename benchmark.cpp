@@ -33,8 +33,8 @@ int main() {
 
     // sparse vector
     gettimeofday(&st, 0);
-    sparse_vector<double> b(1000000,-1);
-    REP(i,1000) {
+    sparse_vector<double> b(N,-1);
+    REP(i,LOOP) {
         for (int j=0; j<b.sz; j+=100) b[j]=j;
         b.clear();
     }
